@@ -46,3 +46,4 @@ city_total = df_filtered.groupby("City")[["Rating"]].mean().reset_index()
 fig_rating = px.bar(df_filtered, y="Rating", x="City",
                    title="Avaliação")
 col5.plotly_chart(fig_rating, use_container_width=True)
+#No Terminal use "streamlit run dashboards.py" para visualizar o dashboard
